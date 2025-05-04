@@ -1,25 +1,31 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    background: linear-gradient(45deg, #ff9800, #ff5722, #f44336); /* Colores vivos */
-    color: #fff;
+    background: linear-gradient(45deg, #fdd835, #ff9800, #f44336); /* Tonos cálidos y vibrantes */
+    color: white;
 }
 
+/* Encabezado */
 header {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    background-color: #222;
     text-align: center;
-    width: 100%;
+    padding: 20px;
 }
 
+/* Menú lateral */
 nav#menu-lateral {
     position: fixed;
     left: 0;
     top: 80px;
     width: 200px;
-    background: #222;
+    background: rgba(0, 0, 0, 0.8);
     padding: 15px;
     border-radius: 10px;
+}
+
+nav#menu-lateral h2 {
+    text-align: center;
+    color: #fff;
 }
 
 nav#menu-lateral ul {
@@ -36,35 +42,51 @@ nav#menu-lateral ul li a {
     text-decoration: none;
     font-weight: bold;
     display: block;
-    padding: 10px;
-    border: solid 2px white;
+    padding: 12px;
+    border-radius: 8px;
+    background: #ff9800;
     transition: 0.3s;
 }
 
 nav#menu-lateral ul li a:hover {
-    background: white;
-    color: black;
+    background: #f44336;
+    color: white;
 }
 
+/* Secciones */
 main {
     margin-left: 220px; /* Espacio para el menú lateral */
     padding: 20px;
 }
 
-section {
+.contenido {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
-img {
-    max-width: 100%;
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+/* Contenedor de imágenes */
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
+.contenedor-imagenes img {
+    width: 250px;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Audio */
+audio {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Pie de página */
 footer {
     text-align: center;
     background: #222;

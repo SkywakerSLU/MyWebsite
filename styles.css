@@ -1,40 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    background: linear-gradient(45deg, #ffcc00, #ff6600, #ff3300);
-    color: black; /* Texto oscuro para mayor legibilidad */
-}
-
-/* Encabezado */
-header {
-    background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding: 20px;
+    background: linear-gradient(90deg, #003366, #00509E, #007FFF); /* Azul profesional */
     color: white;
 }
 
-/* Menú lateral con banner */
-aside#menu-lateral {
-    position: fixed;
-    left: 10px;
-    top: 80px;
-    width: 220px;
-    background: #222;
-    padding: 15px;
-    border-radius: 10px;
-    color: white;
-}
-
-/* Banner */
+/* Banner superior */
 #banner {
     text-align: center;
-    background: #ff6600;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    background: #002147;
+    font-size: 1.5em;
+}
+
+/* Menú lateral fijo */
+#menu-lateral {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 nav h2 {
     text-align: center;
+    color: white;
 }
 
 nav ul {
@@ -43,7 +35,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 nav ul li a {
@@ -51,31 +43,23 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     display: block;
-    padding: 12px;
-    border: solid 2px white;
+    padding: 14px;
     border-radius: 8px;
-    background: #ff6600;
+    background: #00509E;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background: #ff3300;
+    background: #007FFF;
 }
 
 /* Secciones */
 main {
-    margin-left: 240px;
+    margin-left: 220px;
     padding: 20px;
 }
 
-.contenido {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-/* Imágenes */
+/* Contenedor de imágenes */
 .contenedor-imagenes {
     display: flex;
     justify-content: center;
@@ -96,28 +80,21 @@ main {
 }
 
 .imagen-box img {
-    width: 220px;
+    width: 200px;
     border-radius: 10px;
 }
 
-/* Texto descriptivo de imágenes */
-.descripcion {
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-/* Imagen vectorial más pequeña */
+/* Imagen vectorial ajustada */
 .imagen-vectorial img {
-    width: 440px;
+    width: 400px;
 }
 
 /* Pie de página */
 footer {
     text-align: center;
-    background: #222;
+    background: #002147;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    color: white;
 }

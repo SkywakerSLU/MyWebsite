@@ -13,11 +13,30 @@ body {
     font-size: 1.5em;
 }
 
+/* Información adicional en el banner */
+#info-adicional {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007FFF;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00509E;
+}
+
 /* Menú lateral fijo */
 #menu-lateral {
     position: fixed;
     left: 0;
-    top: 80px;
+    top: 100px;
     width: 220px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;

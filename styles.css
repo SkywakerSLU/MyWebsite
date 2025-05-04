@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    background: linear-gradient(45deg, #ffcc00, #ff6600, #ff3300); /* Colores más vivos */
-    color: white;
+    background: linear-gradient(45deg, #ffcc00, #ff6600, #ff3300);
+    color: black; /* Texto oscuro para mayor legibilidad */
 }
 
 /* Encabezado */
@@ -10,34 +10,43 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
     padding: 20px;
+    color: white;
 }
 
-/* Menú lateral */
-nav#menu-lateral {
+/* Menú lateral con banner */
+aside#menu-lateral {
     position: fixed;
     left: 10px;
-    top: 100px;
-    width: 180px;
+    top: 80px;
+    width: 220px;
     background: #222;
     padding: 15px;
     border-radius: 10px;
+    color: white;
 }
 
-nav#menu-lateral h2 {
+/* Banner */
+#banner {
     text-align: center;
-    color: #fff;
+    background: #ff6600;
+    padding: 15px;
+    border-radius: 8px;
 }
 
-nav#menu-lateral ul {
+nav h2 {
+    text-align: center;
+}
+
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav#menu-lateral ul li {
+nav ul li {
     margin-bottom: 10px;
 }
 
-nav#menu-lateral ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -49,13 +58,13 @@ nav#menu-lateral ul li a {
     transition: 0.3s;
 }
 
-nav#menu-lateral ul li a:hover {
+nav ul li a:hover {
     background: #ff3300;
 }
 
 /* Secciones */
 main {
-    margin-left: 200px; /* Espacio para el menú lateral */
+    margin-left: 240px;
     padding: 20px;
 }
 
@@ -66,7 +75,7 @@ main {
     margin-bottom: 20px;
 }
 
-/* Contenedor de imágenes con borde y estilo circular */
+/* Imágenes */
 .contenedor-imagenes {
     display: flex;
     justify-content: center;
@@ -79,6 +88,7 @@ main {
     padding: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .imagen-box:hover {
@@ -90,10 +100,15 @@ main {
     border-radius: 10px;
 }
 
-/* Audio */
-audio {
-    display: block;
-    margin: 20px auto;
+/* Texto descriptivo de imágenes */
+.descripcion {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Imagen vectorial más pequeña */
+.imagen-vectorial img {
+    width: 440px;
 }
 
 /* Pie de página */
@@ -104,4 +119,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    color: white;
 }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Menú de navegación con desplazamiento suave
+    // Menú con desplazamiento suave
     document.querySelectorAll("#menu-lateral a").forEach(link => {
         link.addEventListener("click", function (e) {
             e.preventDefault();
@@ -8,11 +8,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Efecto de aparición en el contenido
-    document.querySelectorAll("section").forEach(sec => {
+    // Efecto de aparición gradual en las secciones
+    document.querySelectorAll(".contenido").forEach(sec => {
         sec.style.opacity = "0";
         setTimeout(() => {
             sec.style.opacity = "1";
-        }, 500);
+        }, 600);
+    });
+
+    // Animación del menú al pasar el mouse
+    const menuItems = document.querySelectorAll("#menu-lateral ul li a");
+    menuItems.forEach(item => {
+        item.addEventListener("mouseover", () => {
+            item.style.transform = "scale(1.1)";
+        });
+        item.addEventListener("mouseout", () => {
+            item.style.transform = "scale(1)";
+        });
     });
 });

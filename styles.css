@@ -1,7 +1,7 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
-    background: linear-gradient(90deg, #003366, #00509E, #007FFF); /* Azul profesional */
+    background: linear-gradient(90deg, #002147, #00509E, #007FFF); /* Azul elegante */
     color: white;
 }
 
@@ -9,7 +9,7 @@ body {
 #banner {
     text-align: center;
     padding: 20px;
-    background: #002147;
+    background: #001F3F;
     font-size: 1.5em;
 }
 
@@ -18,8 +18,8 @@ body {
     position: fixed;
     left: 0;
     top: 80px;
-    width: 200px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 220px;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
 }
@@ -55,7 +55,7 @@ nav ul li a:hover {
 
 /* Secciones */
 main {
-    margin-left: 220px;
+    margin-left: 240px;
     padding: 20px;
 }
 
@@ -80,7 +80,7 @@ main {
 }
 
 .imagen-box img {
-    width: 200px;
+    width: 220px;
     border-radius: 10px;
 }
 
@@ -92,7 +92,7 @@ main {
 /* Pie de página */
 footer {
     text-align: center;
-    background: #002147;
+    background: #001F3F;
     padding: 10px;
     position: fixed;
     bottom: 0;

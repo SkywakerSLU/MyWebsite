@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Final SLU</title>
+    <title>Proyecto Final - Saint Leo University</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
 
     <header>
-        <h1>Bienvenido a mi Proyecto Final</h1>
-        <nav>
-            <ul>
-                <li><a href="#fotografia">Fotografía</a></li>
-                <li><a href="#vector">Imagen Vectorial</a></li>
-                <li><a href="#audio">Audio</a></li>
-            </ul>
-        </nav>
+        <h1>Proyecto Final de Luis Alexander Nizama Saes</h1>
     </header>
 
+    <!-- Menú lateral -->
+    <nav id="menu-lateral">
+        <h2>Explora</h2>
+        <ul>
+            <li><a href="#fotografia">📸 Fotografía</a></li>
+            <li><a href="#vector">🎨 Imagen Vectorial</a></li>
+            <li><a href="#audio">🎵 Audio</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="fotografia">
+        <!-- Sección de Fotografía -->
+        <section id="fotografia" class="contenido">
             <h2>Fotografía Digital</h2>
-            <img src="Fotografía Digital/ImagenEditada.png" alt="Imagen editada">
-            <img src="Fotografía Digital/ImagenOriginal.jpg" alt="Imagen original">
+            <p>Saint Leo University captura la esencia de la excelencia académica y el desarrollo profesional.</p>
+            <div class="contenedor-imagenes">
+                <img src="Fotografia Digital/ImagenEditada.png" alt="Imagen editada">
+                <img src="Fotografia Digital/ImagenOriginal.jpg" alt="Imagen original">
+            </div>
         </section>
 
-        <section id="vector">
+        <!-- Sección de Imagen Vectorial -->
+        <section id="vector" class="contenido">
             <h2>Imagen Vectorial</h2>
-            <img src="Imagen Vectorial/logoSLU.png" alt="Logo de Saint Leo University">
+            <p>El logo de Saint Leo University representa el espíritu de aprendizaje, comunidad y liderazgo.</p>
+            <div class="contenedor-imagenes">
+                <img src="Imagen Vectorial/logoSLU.png" alt="Logo de Saint Leo University">
+            </div>
         </section>
 
-        <section id="audio">
+        <!-- Sección de Audio Digital -->
+        <section id="audio" class="contenido">
             <h2>Audio Digital</h2>
+            <p>Este archivo de audio representa el ambiente inspirador de Saint Leo University.</p>
             <audio controls>
                 <source src="Audio Digital/SLUaudio.mp3" type="audio/mpeg">
                 Tu navegador no soporta el formato de audio.
